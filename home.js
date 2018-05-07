@@ -26,7 +26,7 @@ request(url, function (err, response, body) {
 	        result[result.length] = row;
         })
     
-        fs.writeFile("output.json", JSON.stringify(result, null , " "), function(err){
+        fs.writeFile("data.json", JSON.stringify(result, null , " "), function(err){
             if(err){
                 console.log(err);
             } else {
